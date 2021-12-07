@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Brooke's Blog</title>
+        <link href="post2style.css" rel="stylesheet" type="text/css">
+    </head>
+    <header>
+        <h1>Security Vulnerabilities in Web Design</h1>
+    </header>
+
+    <body>
+            <p>
+                Having a depth of CS knowledge is certainly a great power, but per the words of Winston 
+                Churchill, it also comes with a great responsibility. Since unfortunately it seems that
+                those with malicious intentions will always be present, it is important to know what
+                vulnerabilities exist in the content we create as web developers.
+            </p>
+            <h2>
+                Insecurity of HTTP Connections
+            </h2>
+            <p>
+                HTTP, which stands for <b>H</b>yper<b>T</b>ext <b>T</b>ransfer <b>P</b>rotocol, is the
+                easiest and fastest web page request service. However, whatever it gains in speed it loses
+                almost immediately in vulnerabilities. HTTP requests do not require any sort of domain
+                validation and there is no encryption of the data sent or received over an HTTP connection.
+            </p>
+            <figure>
+                <img src="post2_http.PNG">
+            </figure>
+            <p>
+                The code snippet displayed above demonstrates, as the comments say, a GET request over an
+                insecure HTTP connection. Since there is no validation required for this request, it is
+                especially vulnerable to buffer overflow attacks. There is also no mechanism in place to
+                ensure that the data being transmitted is doing so over a secure connection in HTTP
+                requests or that any data being sent via an HTTP connection is reaching its proper location.
+                <br>
+                <br>
+                The most effective way to rid your web application of many of the vulnerabilities of HTTP is
+                to instead use an HTTPS connection. HTTPS, which stands for <b>H</b>yper<b>T</b>ext 
+                <b>T</b>ransfer <b>P</b>rotocol <b>S</b>ecure, was created to eliminate many of the problems
+                with HTTP connections by encrypting all transmitted data, requiring SSL certificates, and
+                operating in a more private layer of the network architecture. However, almost all HTTPS
+                certificates require payment, which is not accessible to all web developers. HTTP connections
+                are not any cause for concern unless you are entering information into the website such as
+                a username, password, or any personally identifiable information. If you are stuck in a
+                situation where you have to input information under an insecure connection, follow these
+                simple rules:
+                <ol>
+                    <li>
+                        Use a unique, highly secure password that has no personal information (i.e. pets
+                        names, your name, a family member's name, etc.)
+                    </li>
+                    <li>
+                        Diversify the order of your password; capitalize a random couple letters in the 
+                        middle instead of just the first, use more obscure special characters like % or ^
+                        as opposed to ! @ and *, and put them in a random order.
+                    </li>
+                    <li>
+                        If possible, use a fake name or nickname that would be more difficult to attach to
+                        any other information found about you.
+                    </li>
+                    <li>
+                        Do not, under any circumstances, provide answers to security questions. Most things
+                        that require security questions use a very similar selection and your most private
+                        assets could be quickly compromised.
+                    </li>
+                </ol>
+                <br>
+                In summary, HTTP connections, while they are insecure for data transmission, are completely
+                sufficient for any website where no data input or retrieval is required. Do not let the
+                browser 'Not Secure' message deter you from accessing a website, just always proceed with
+                caution.
+                <br>
+                <br>
+                Sources:
+                <a href="https://www.purevpn.com/ddos/http-vulnerability">
+                    Source 1
+                </a>
+                <a href="https://www.opencsf.org/Books/csf/html/TCPSockets.html">
+                    Source 2
+                </a>
+            </p>
+    </body>
+</html>
