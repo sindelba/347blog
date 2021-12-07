@@ -2,19 +2,67 @@
 
 <html>
     <head>
-        <title>Brooke's First Blog Post</title>
+        <title>Brooke's Blog</title>
+        <link href="post1style.css" rel="stylesheet" type="text/css">
     </head>
 
-    <body>
-        <header>
-            <h1>CSS 149: Intro to Web Dev</h1>
-        </header>
+    <header>
+        <h1>CSS 149: Intro to Web Dev</h1>
+    </header>
 
+    <body>
         <main>
-            <p>CSS is the cornerstone of all aesthetically pleasing, diverse websites that exist today.</p>
-            <p>an obvious choice</p>
-            <p>cheetah sisters by the cheetah girls</p>
-            <p>my childhood, #aquasupremacy</p>
+            <p>
+                Cascading style sheets, also known as CSS, are the cornerstone of all aesthetically pleasing, 
+                diverse websites that exist today. As quoted in one of my reference articles, "without it, 
+                websites would still be plain text on white backgrounds."
+                <sup>
+                    <a href="https://www.bigcommerce.com/ecommerce-answers/what-css-and-why-it-important/">
+                    1
+                    </a>
+                </sup>
+                CSS provides many implicit styling
+                elements, but yet still allows a developer to modify any element to better fit their specific
+                design vision. 
+                <br>
+                <br>
+                As shown in the code example, which is actually a snippet of the CSS 
+                stylesheet for this website, shows specifically the use of embedded colors inside of the CSS
+                library as well as a custom one.
+            </p>
+            <figure>
+                <img src="post1_css_color.PNG">
+            </figure>
+            <p>
+                In the image above, the background-color element in the body format section displays the
+                use of a custom color created using RGB values explictly. Additionally, the color element
+                inside the h1 section utilizes a built-in default color to the CSS library, thus displaying
+                the two different ways to choose colors for style elements.
+                <br>
+                <br>
+                Additionally, while many developers will choose to utilize an external CSS file as their
+                stylesheet, the style tag in HTML allows for CSS style elements to be written directly into
+                the HTML file. This is most useful for pages that will have a unique style and typically
+                fewer elements that the developer wants to be styled.
+            </p>
+            <figure>
+                <img src="post1_internal_css.PNG">
+            </figure>
+            <p>
+                It is easy to see how internal CSS style could quickly clutter up a web page with a lot of
+                elements, but for any simple web design it is quite useful to keep everything in one file.
+                <br>
+                <br>
+                Sources:
+                <a href="https://www.bigcommerce.com/ecommerce-answers/what-css-and-why-it-important/">
+                    Source 1
+                </a>
+                <a href="https://www.w3schools.com/css/css_howto.asp">
+                    Source 2
+                </a>
+                <br>
+                <br>
+            </p>
         </main>
     </body>
 </html>

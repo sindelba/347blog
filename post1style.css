@@ -1,0 +1,19 @@
+body {
+    background-color:rgb(196, 255, 235);
+    font-size: 20px;
+    text-align: left;
+    margin-left: 40px;
+    line-height: 140%;
+    font-family: arial;
+}
+
+h1 {
+    font-size: 50px;
+    color:lightcoral;
+    text-align: center;
+    font-family: georgia;
+}
+
+sup {
+    font-size: 12px;
+}

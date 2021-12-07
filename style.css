@@ -1,4 +1,10 @@
 body {
-    background-color: aquamarine;
+    background-color:rgb(196, 255, 235);
     color:lightcoral;
+    font-size: 25px;
+    margin-left: 30px;
+}
+
+h1 {
+    font-size: 50px;
 }
