@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Brooke's Blog</title>
+        <link href="post4style.css" rel="stylesheet" type="text/css">
+    </head>
+    <header>
+        <h1>
+            How to be an Ethical Web Developer Pt.2
+        </h1>
+    </header>
+
+    <body>
+        <p>
+            As I have said before, now that technology is readily available to 
+            so many people, it has become more important than ever to consider
+            the implications of design choices, content selection, and cultural
+            backgrounds when creating web programs. Tt is our job as developers 
+            to make sure our products are sufficient to service all kinds of
+            people to the best of our ability. In my last blog post, I talked 
+            about the importance of color usage when it came to web design. 
+            Today I will be writing about another ethical and accessibility 
+            concern within web programs that needs to be addressed.
+        </p>
+        <h2>
+            Vision Impairments
+        </h2>
+        <p>
+            With the creation of other technologies such as screen readers, the
+            online world seems to be more accessible for the vision impaired
+            already. However, unless the existing websites provide elements for
+            such a reader to read, their benefits drops significantly. For
+            someone with zero vision, a webpage made up almost entirely of
+            images, something fairly typical in today's world, would be nearly
+            impossible to understand unless the developers specifically addressed
+            the need for accessible alternatives. the HTML <code>&ltimg&gt;</code>
+            tag contains an alt element that allows the webpage creator to add a
+            description of what the image contains for a person who cannot see it.
+        </p>
+        <p>
+            <code id="exmp">&ltimg src="img_girl.jpg" alt="Girl in a jacket" width="500" height="600"></code>
+        </p>
+        <br>
+        <p>
+            Additionally, it is best practice to distinguish elements and
+            information based on multiple criteria and to follow universal
+            conventions as much as possible. For example, do not put anything
+            on a webpage in underlined blue text unless it is a hyperlink. Many
+            websites still distinguish elements based on color alone, which is
+            also a problem for screen readers that cannot see color elements much
+            like a person.
+        </p>
+        <figure>
+            <img src="post4_color.png">
+        </figure>
+        Sources:
+                <a href="https://fuzzymath.com/blog/improve-accessibility-for-visually-impaired-users/">
+                    Source 1
+                </a>
+                <a href="https://uxdesign.cc/web-accessibility-for-visual-impairment-a8ee4bb3aef8">
+                    Source 2
+                </a>
+    </body>
+</html>
