@@ -1,0 +1,55 @@
+h1 {
+    color: darkcyan;
+    animation-name: title;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+    text-align: center;
+    font-size: 50px;
+    font-family: Verdana;
+}
+
+@keyframes title {
+    0% {color: darkcyan;}
+    10% {color:darkcyan}
+    25% {color: navy;}
+    55% {color:purple}
+    75% {color:deepskyblue}
+    100% {color:deeppink}
+}
+
+body {
+    background-color:lightgray;
+    animation-name: back;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+    text-align: center;
+    font-size: 50px;
+    font-family: Verdana;
+    font-size: 20px;
+    text-align: left;
+    margin-left: 40px;
+    margin-right: 40px;
+    line-height: 140%;
+    font-family: helvetica;
+}
+
+@keyframes back {
+    0% {background-color: lightgray}
+    10% {background-color:lightgray}
+    25% {background-color: lightgoldenrodyellow}
+    55% {background-color: lightgreen}
+    75% {background-color: rgb(245, 174, 174)}
+    100% {background-color:lightskyblue}
+}
+
+#ex {
+    color: black;
+    animation-name: single;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes single {
+    0% {color: black}
+    10% {color:red; font-size: 30px; font-weight: bold;}
+}
